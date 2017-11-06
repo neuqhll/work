@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <style>
+    .top_image {
+      display: -webkit-flex;
+      display: flex;
+      justify-content:center;
+      margin-top: 4rem;
+    }
+    .loginContainer {
+      padding-top: 7rem;
+    }
+    .loginContainer p,span,input{
+      font-family: Helvetica Neue, Tahoma, Arial;
+    }
+
+    .input_container {
+      background-color: #fff;
+      margin-top: .6rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem .0rem .3rem .0rem;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .input_container input {
+      border: none;
+      outline:medium;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .login_container {
+      margin: 4rem 3rem 1rem 3rem;
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: #33CCFF;
+      padding: .6rem 0;
+      border: 1px;
+      border-radius: 0.15rem;
+      text-align: center;
+    }
+
+    .to_forget {
+      float: right;
+      color: #33CCFF;
+      margin-right: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top_image">
+    <img src="neuqsoft.jpg" width="200" height="40">
+  </div>
+  <div class="loginContainer">
+    <div class="input_container">
+      <input type="text" placeholder="请输入用户名">
+    </div>
+    <div class="input_container">
+      <input type="text" placeholder="请输入登录密码">
+    </div>
+
+    <div class="login_container">登录</div>
+    <router-link class="to_forget">忘记密码？</router-link>
+  </div>
+</body>
+
+</html>
